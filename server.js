@@ -17,8 +17,8 @@ app.use(express.static(path.join(__dirname, 'public'))); // Serve static files
 async function connect() {
   try {
     const client = await MongoClient.connect(uri, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+      //useNewUrlParser: true,
+      //useUnifiedTopology: true,
       serverApi: ServerApiVersion.v1
     });
     console.log("Successful connection to MongoDB");
